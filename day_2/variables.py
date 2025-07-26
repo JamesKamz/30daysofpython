@@ -53,5 +53,3 @@ print("Division:", division)
 print("Reste (modulo):", reste)
 print("Division entière (floor division):", division_entiere)
 
-# Niveau 3
-d
