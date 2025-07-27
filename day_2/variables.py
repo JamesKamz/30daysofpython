@@ -4,7 +4,7 @@
 #defining variables
 first_name="James"
 last_name="Kamz"
-full_name="James Kamz"
+full_name= first_name + " " + last_name
 country="Togo"
 city="Lome"
 age=10
@@ -17,21 +17,21 @@ x, y, z = 5, 10, 15
 
 # niveau 2
 # Vérification du type de données de toutes les variables
-print("Type de prénom:", type(prenom))
-print("Type de nom de famille:", type(nom_de_famille))
-print("Type de nom complet:", type(nom_complet))
-print("Type de pays:", type(pays))
-print("Type de ville:", type(ville))
+print("Type de prénom:", type(first_name))
+print("Type de nom de famille:", type(last_name))
+print("Type de nom complet:", type(full_name))
+print("Type de pays:", type(country))
+print("Type de ville:", type(city))
 print("Type d'âge:", type(age))
-print("Type de est_marie:", type(est_marie))
+print("Type de est_marie:", type(is_married))
 print("Type de is_true:", type(is_true))
 print("Type de is_light_on:", type(is_light_on))
 
 # Longueur du prénom
-print("Longueur du prénom:", len(prenom))
+print("Longueur du prénom:", len(first_name))
 
 # Comparaison de la longueur du prénom et du nom de famille
-print("Prénom plus long que nom de famille ?", len(prenom) > len(nom_de_famille))
+print("Prénom plus long que nom de famille ?", len(first_name) > len(last_name))
 
 # Déclaration des variables numériques
 num_one = 5
@@ -53,3 +53,21 @@ print("Division:", division)
 print("Reste (modulo):", reste)
 print("Division entière (floor division):", division_entiere)
 
+# calclul l'air et la circonference d'un cercle
+from math import pi
+radius_of_circle = 30
+area_of_circle = pi * (radius_of_circle ** 2)
+circumference_of_circle = 2 * pi * radius_of_circle
+print("Aire du cercle:", area_of_circle)
+print("Circonférence du cercle:", circumference_of_circle) 
+radius_of_circle = input(int("Entrez le rayon du cercle: "))
+area_of_circle = pi * (radius_of_circle ** 2)
+print("Aire du cercle avec rayon entré:", area_of_circle)
+
+# utiliser input pour avoir 
+last_name = input("Entrez votre nom de famille: ")
+first_name = input("Entrez votre prénom: ")
+country = input("Entrez votre pays: ")
+age = int(input("Entrez votre âge: "))
+
+help ('keywords')
